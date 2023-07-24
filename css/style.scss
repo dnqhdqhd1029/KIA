@@ -121,7 +121,8 @@ h2.title {
 
 
 .searchContainer {
-  padding: 16px;
+  padding: 10px 16px;
+  border-bottom: 2px solid #333;
 }
 
 .inputContainer {
@@ -143,6 +144,7 @@ h2.title {
   table {
     position: relative;
 
+
     thead {
       position: sticky;
       left: 0;
@@ -151,6 +153,11 @@ h2.title {
 
     tbody {
       height: 350px;
+
+      td {
+        font-size: 12px;
+      }
+
     }
   }
 }

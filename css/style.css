@@ -105,7 +105,8 @@ h2.title:before {
 }
 
 .searchContainer {
-  padding: 16px;
+  padding: 10px 16px;
+  border-bottom: 2px solid #333;
 }
 
 .inputContainer {
@@ -132,6 +133,9 @@ h2.title:before {
 }
 .tableWrap.scroll table tbody {
   height: 350px;
+}
+.tableWrap.scroll table tbody td {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
