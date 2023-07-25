@@ -118,6 +118,8 @@ h2.title:before {
 
 .inputContainer {
   padding: 16px;
+  border: 1px solid red;
+  justify-content: flex-start;
 }
 .inputContainer small {
   font-size: 14px;

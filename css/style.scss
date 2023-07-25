@@ -125,6 +125,8 @@ h2.title {
 
 .inputContainer {
   padding: 16px;
+  border: 1px solid red;
+  justify-content: flex-start;
 
   small {
     font-size: 14px;
