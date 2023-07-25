@@ -68,20 +68,26 @@ footer {
 .mainMenu {
   padding: 16px;
 }
+.mainMenu h2.title {
+  border: 3px solid #333;
+  height: 50px;
+  border-radius: 30px;
+}
 
 h2.title {
   display: flex;
   align-items: center;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 h2.title:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: #333;
-  margin-right: 5px;
+  content: "\f285";
+  margin: 0 10px;
+  font-family: bootstrap-icons !important;
+  font-weight: bolder;
+  color: #333;
 }
 
 .mainMenu nav {
@@ -138,4 +144,63 @@ h2.title:before {
   font-size: 12px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.loginWrap {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loginWrap .logo {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+.loginWrap .logo img {
+  max-width: 100%;
+}
+.loginWrap input::placeholder {
+  font-size: 14px;
+}
+.loginWrap .inputCont {
+  width: 100%;
+  padding: 0 16px;
+}
+.loginWrap .inputCont input:focus {
+  outline: none;
+}
+.loginWrap .btnLogin {
+  width: 100%;
+  padding: 0 16px;
+}
+.loginWrap .btnLogin button {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btnWrap {
+  padding-top: 20px;
+  text-align: center;
+}
+.btnWrap .btn {
+  color: #fff;
+}
+
+/*btn*/
+.btn.bg-light {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #ccc;
+  font-size: 12px !important;
+  min-width: 72px !important;
+  height: 38px;
+}
+
+.searchContainer .btn {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #ccc;
+  font-size: 14px !important;
+  min-width: 72px !important;
+  height: 38px;
+}
