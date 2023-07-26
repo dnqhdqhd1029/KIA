@@ -65,7 +65,7 @@ footer {
   width: 100%;
   flex: 1;
   overflow-y: auto;
-  padding: 30px 0 100px 0;
+  padding: 0 0 100px 0;
 }
 
 .mainMenu {
@@ -118,15 +118,12 @@ h2.title {
   }
 }
 
-.searchContainer {
-  padding: 10px 16px;
-  border-bottom: 2px solid #333;
-}
-
 .inputContainer {
   padding: 16px;
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
+  border-bottom: 2px solid #333;
 
   small {
     font-size: 14px;
@@ -137,8 +134,8 @@ h2.title {
   padding: 16px;
 }
 
-.tableWrap.scroll {
-  height: 350px;
+.tableWrap {
+  //height: 350px;
 
   table {
     position: relative;
@@ -150,12 +147,23 @@ h2.title {
     }
 
     tbody {
-      height: 350px;
-
       td {
         font-size: 12px;
       }
     }
+  }
+  table.table-data {
+    tbody {
+      td {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.table-responsive {
+  table {
+    width: 1000px;
   }
 }
 
@@ -199,14 +207,6 @@ h2.title {
   }
 }
 
-.btnWrap {
-  padding-top: 20px;
-  text-align: center;
-  .btn {
-    color: #fff;
-  }
-}
-
 /*btn*/
 .btn.bg-light {
   background-color: #f7f7f7 !important;
@@ -217,11 +217,26 @@ h2.title {
 }
 
 .searchContainer {
+  padding: 10px 16px;
+  border-bottom: 2px solid #333;
   .btn {
-    background-color: #f7f7f7 !important;
-    border: 1px solid #ccc;
-    font-size: 14px !important;
-    min-width: 72px !important;
-    height: 38px;
+    height: 30px;
+  }
+
+  .form-control {
+    height: 30px;
+  }
+  .form-select {
+    height: 30px;
+    line-height: 15px;
+    font-size: 12px;
+  }
+
+  .btnWrap {
+    padding-top: 20px;
+    text-align: center;
+    .btn {
+      height: auto;
+    }
   }
 }
