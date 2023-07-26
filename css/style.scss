@@ -42,7 +42,7 @@ header {
   padding: 10px;
 
   h1 {
-    font-size: 22px;
+    font-size: 18px;
     margin: 0;
   }
 }
@@ -132,6 +132,10 @@ h2.title {
 
 .inputListContainer {
   padding: 16px;
+
+  & > div {
+    font-size: 13px;
+  }
 }
 
 .tableWrap {
@@ -219,6 +223,13 @@ h2.title {
 .searchContainer {
   padding: 10px 16px;
   border-bottom: 2px solid #333;
+  .font12 {
+    font-size: 12px;
+  }
+  label {
+    font-size: 14px;
+    word-spacing: -1px;
+  }
   .btn {
     height: 30px;
   }
