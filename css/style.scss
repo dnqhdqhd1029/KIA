@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 160%;
   color: #333;
   font-family: "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Helvetica",
@@ -44,6 +44,7 @@ header {
   h1 {
     font-size: 18px;
     margin: 0;
+    font-weight: bold;
   }
 }
 
@@ -74,6 +75,7 @@ footer {
     border: 3px solid #333;
     height: 50px;
     border-radius: 30px;
+    margin: 20px 0 30px 0;
   }
 }
 
@@ -110,6 +112,7 @@ h2.title {
       display: inline-flex;
       justify-content: center;
       align-items: center;
+      font-size: 14px;
     }
 
     a.on {
@@ -126,16 +129,20 @@ h2.title {
   border-bottom: 2px solid #333;
 
   small {
-    font-size: 14px;
+    font-size: 12px;
   }
-}
-
-.inputListContainer {
-  padding: 16px;
-
   & > div {
     font-size: 13px;
   }
+}
+
+/*form-control*/
+.form-control {
+  height: 30px;
+  font-size: 12pz;
+}
+.form-control::placeholder {
+  font-size: 12px;
 }
 
 .tableWrap {
@@ -143,6 +150,7 @@ h2.title {
 
   table {
     position: relative;
+    font-size: 12px;
 
     thead {
       position: sticky;
@@ -201,6 +209,7 @@ h2.title {
   .btnLogin {
     width: 100%;
     padding: 0 16px;
+    margin-top: 20px;
 
     button {
       display: block;
@@ -228,18 +237,17 @@ h2.title {
   }
   label {
     font-size: 14px;
+    font-weight: bold;
     word-spacing: -1px;
   }
   .btn {
     height: 30px;
   }
 
-  .form-control {
-    height: 30px;
-  }
   .form-select {
     height: 30px;
     line-height: 15px;
+    font-size: 12px;
     font-size: 12px;
   }
 
@@ -249,5 +257,12 @@ h2.title {
     .btn {
       height: auto;
     }
+  }
+}
+
+.inputListContainer {
+  .col-4 {
+    font-size: 14px;
+    font-weight: bold;
   }
 }

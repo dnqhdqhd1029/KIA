@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 160%;
   color: #333;
   font-family: "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Helvetica", "AppleSDGothicNeo", sans-serif;
@@ -43,6 +43,7 @@ header {
 header h1 {
   font-size: 18px;
   margin: 0;
+  font-weight: bold;
 }
 
 footer {
@@ -73,6 +74,7 @@ footer {
   border: 3px solid #333;
   height: 50px;
   border-radius: 30px;
+  margin: 20px 0 30px 0;
 }
 
 h2.title {
@@ -106,6 +108,7 @@ h2.title:before {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
 }
 .mainMenu nav a.on {
   background-color: #333333;
@@ -119,18 +122,25 @@ h2.title:before {
   border-bottom: 2px solid #333;
 }
 .inputContainer small {
-  font-size: 14px;
+  font-size: 12px;
+}
+.inputContainer > div {
+  font-size: 13px;
 }
 
-.inputListContainer {
-  padding: 16px;
+/*form-control*/
+.form-control {
+  height: 30px;
+  font-size: 12pz;
 }
-.inputListContainer > div {
-  font-size: 13px;
+
+.form-control::placeholder {
+  font-size: 12px;
 }
 
 .tableWrap table {
   position: relative;
+  font-size: 12px;
 }
 .tableWrap table thead {
   position: sticky;
@@ -176,6 +186,7 @@ h2.title:before {
 .loginWrap .btnLogin {
   width: 100%;
   padding: 0 16px;
+  margin-top: 20px;
 }
 .loginWrap .btnLogin button {
   display: block;
@@ -202,17 +213,16 @@ h2.title:before {
 }
 .searchContainer label {
   font-size: 14px;
+  font-weight: bold;
   word-spacing: -1px;
 }
 .searchContainer .btn {
   height: 30px;
 }
-.searchContainer .form-control {
-  height: 30px;
-}
 .searchContainer .form-select {
   height: 30px;
   line-height: 15px;
+  font-size: 12px;
   font-size: 12px;
 }
 .searchContainer .btnWrap {
@@ -221,4 +231,9 @@ h2.title:before {
 }
 .searchContainer .btnWrap .btn {
   height: auto;
+}
+
+.inputListContainer .col-4 {
+  font-size: 14px;
+  font-weight: bold;
 }
