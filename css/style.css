@@ -51,13 +51,14 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 56px;
+  height: 36px;
   background-color: #333;
   color: #fff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  font-size: 12px;
 }
 
 .container {
@@ -148,15 +149,43 @@ h2.title:before {
   left: 0;
   top: 0;
 }
+.tableWrap table tbody th {
+  padding: 0;
+}
 .tableWrap table tbody td {
   font-size: 12px;
+  padding: 0;
 }
-.tableWrap table.table-data tbody td {
-  font-size: 16px;
+.tableWrap table .form-check {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: auto;
+  text-align: left;
+  display: inline-block;
+  padding-left: 10px;
+}
+.tableWrap table .form-check .form-check-input {
+  margin: 0;
+  float: none;
+  vertical-align: middle;
+}
+.tableWrap table.table-data {
+  margin: 30px 0;
+}
+.tableWrap table.table-data .bg-dark {
+  color: #fff;
+  text-align: center;
+}
+.tableWrap table.table-data th {
+  vertical-align: middle;
+}
+.tableWrap table.table-data td {
+  font-size: 14px;
 }
 
 .table-responsive table {
-  width: 1000px;
+  width: 800px;
 }
 
 .loginWrap {
@@ -206,8 +235,11 @@ h2.title:before {
 .searchContainer .font12 {
   font-size: 12px;
 }
+.searchContainer .font11 {
+  font-size: 11px;
+}
 .searchContainer label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   word-spacing: -1px;
   padding: 0 !important;
@@ -229,8 +261,13 @@ h2.title:before {
 .searchContainer .btnWrap .btn {
   height: 30px;
   font-size: 12px;
+  min-width: 30%;
 }
 
+.inputListContainer {
+  padding: 0 10px;
+  margin-top: 10px;
+}
 .inputListContainer .col-4 {
   font-size: 14px;
   font-weight: bold;
@@ -242,5 +279,3 @@ h2.title:before {
   border: 1px solid #ccc;
   font-size: 11px !important;
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@ body {
   line-height: 160%;
   color: #333;
   font-family: "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Helvetica",
-  "AppleSDGothicNeo", sans-serif;
+    "AppleSDGothicNeo", sans-serif;
   font-weight: 400;
   width: 100%;
   height: 100vh;
@@ -53,13 +53,14 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 56px;
+  height: 36px;
   background-color: #333;
   color: #fff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  font-size: 12px;
 }
 
 .container {
@@ -160,27 +161,56 @@ h2.title {
       position: sticky;
       left: 0;
       top: 0;
+      th {
+      }
     }
 
     tbody {
+      th {
+        padding: 0;
+      }
+
       td {
         font-size: 12px;
+        padding: 0;
+      }
+    }
+
+    .form-check {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: auto;
+      text-align: left;
+      display: inline-block;
+      padding-left: 10px;
+
+      .form-check-input {
+        margin: 0;
+        float: none;
+        vertical-align: middle;
       }
     }
   }
 
   table.table-data {
-    tbody {
-      td {
-        font-size: 16px;
-      }
+    margin: 30px 0;
+    .bg-dark {
+      color: #fff;
+      text-align: center;
+    }
+    th {
+      vertical-align: middle;
+    }
+    td {
+      font-size: 14px;
     }
   }
 }
 
 .table-responsive {
   table {
-    width: 1000px;
+    width: 800px;
   }
 }
 
@@ -228,7 +258,6 @@ h2.title {
   }
 }
 
-
 .searchContainer {
   padding: 10px 16px;
   border-bottom: 2px solid #333;
@@ -240,9 +269,12 @@ h2.title {
   .font12 {
     font-size: 12px;
   }
+  .font11 {
+    font-size: 11px;
+  }
 
   label {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     word-spacing: -1px;
     padding: 0 !important;
@@ -251,7 +283,6 @@ h2.title {
 
   .btn {
     height: 30px;
-
   }
 
   .form-select {
@@ -268,11 +299,14 @@ h2.title {
     .btn {
       height: 30px;
       font-size: 12px;
+      min-width: 30%;
     }
   }
 }
 
 .inputListContainer {
+  padding: 0 10px;
+  margin-top: 10px;
   .col-4 {
     font-size: 14px;
     font-weight: bold;
