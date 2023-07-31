@@ -10,7 +10,7 @@ body {
   line-height: 160%;
   color: #333;
   font-family: "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Helvetica",
-    "AppleSDGothicNeo", sans-serif;
+  "AppleSDGothicNeo", sans-serif;
   font-weight: 400;
   width: 100%;
   height: 100vh;
@@ -71,6 +71,7 @@ footer {
 
 .mainMenu {
   padding: 16px;
+
   h2.title {
     border: 3px solid #333;
     height: 50px;
@@ -131,6 +132,7 @@ h2.title {
   small {
     font-size: 12px;
   }
+
   & > div {
     font-size: 13px;
   }
@@ -139,8 +141,10 @@ h2.title {
 /*form-control*/
 .form-control {
   height: 30px;
-  font-size: 12pz;
+  font-size: 11px;
+  padding: 0 0 0 3px !important;
 }
+
 .form-control::placeholder {
   font-size: 12px;
 }
@@ -164,6 +168,7 @@ h2.title {
       }
     }
   }
+
   table.table-data {
     tbody {
       td {
@@ -186,6 +191,7 @@ h2.title {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   .logo {
     padding: 0 30px;
     margin-bottom: 30px;
@@ -194,6 +200,7 @@ h2.title {
       max-width: 100%;
     }
   }
+
   input::placeholder {
     font-size: 14px;
   }
@@ -201,6 +208,7 @@ h2.title {
   .inputCont {
     width: 100%;
     padding: 0 16px;
+
     input:focus {
       outline: none;
     }
@@ -220,28 +228,30 @@ h2.title {
   }
 }
 
-/*btn*/
-.btn.bg-light {
-  background-color: #f7f7f7 !important;
-  border: 1px solid #ccc;
-  font-size: 12px !important;
-  min-width: 72px !important;
-  height: 38px;
-}
 
 .searchContainer {
   padding: 10px 16px;
   border-bottom: 2px solid #333;
+
+  .row > * {
+    padding-left: calc(var(--bs-gutter-x) * 0.2);
+  }
+
   .font12 {
     font-size: 12px;
   }
+
   label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     word-spacing: -1px;
+    padding: 0 !important;
+    line-height: 2.5;
   }
+
   .btn {
     height: 30px;
+
   }
 
   .form-select {
@@ -252,10 +262,12 @@ h2.title {
   }
 
   .btnWrap {
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
+
     .btn {
-      height: auto;
+      height: 30px;
+      font-size: 12px;
     }
   }
 }
@@ -265,4 +277,11 @@ h2.title {
     font-size: 14px;
     font-weight: bold;
   }
+}
+
+/*btn*/
+.btn.bg-light {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #ccc;
+  font-size: 11px !important;
 }
