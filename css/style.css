@@ -131,7 +131,8 @@ h2.title:before {
 /*form-control*/
 .form-control {
   height: 30px;
-  font-size: 12pz;
+  font-size: 11px;
+  padding: 0 0 0 3px !important;
 }
 
 .form-control::placeholder {
@@ -195,26 +196,22 @@ h2.title:before {
   font-weight: 600;
 }
 
-/*btn*/
-.btn.bg-light {
-  background-color: #f7f7f7 !important;
-  border: 1px solid #ccc;
-  font-size: 12px !important;
-  min-width: 72px !important;
-  height: 38px;
-}
-
 .searchContainer {
   padding: 10px 16px;
   border-bottom: 2px solid #333;
+}
+.searchContainer .row > * {
+  padding-left: calc(var(--bs-gutter-x) * 0.2);
 }
 .searchContainer .font12 {
   font-size: 12px;
 }
 .searchContainer label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   word-spacing: -1px;
+  padding: 0 !important;
+  line-height: 2.5;
 }
 .searchContainer .btn {
   height: 30px;
@@ -226,14 +223,24 @@ h2.title:before {
   font-size: 12px;
 }
 .searchContainer .btnWrap {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
 }
 .searchContainer .btnWrap .btn {
-  height: auto;
+  height: 30px;
+  font-size: 12px;
 }
 
 .inputListContainer .col-4 {
   font-size: 14px;
   font-weight: bold;
 }
+
+/*btn*/
+.btn.bg-light {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #ccc;
+  font-size: 11px !important;
+}
+
+/*# sourceMappingURL=style.css.map */
