@@ -142,18 +142,27 @@ h2.title:before {
 
 .tableWrap table {
   position: relative;
-  font-size: 12px;
+  font-size: 10px;
 }
 .tableWrap table thead {
   position: sticky;
   left: 0;
   top: 0;
 }
+.tableWrap table thead th {
+  font-size: 12px;
+}
+.tableWrap table thead th:first-of-type {
+  text-align: center;
+}
 .tableWrap table tbody th {
   padding: 0;
 }
+.tableWrap table tbody th:first-of-type {
+  text-align: center;
+}
 .tableWrap table tbody td {
-  font-size: 12px;
+  font-size: 10px;
   padding: 0;
 }
 .tableWrap table .form-check {
@@ -279,3 +288,5 @@ h2.title:before {
   border: 1px solid #ccc;
   font-size: 11px !important;
 }
+
+/*# sourceMappingURL=style.css.map */
