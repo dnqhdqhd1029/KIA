@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @import url("default.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
+@import url("bootstrap.css");
+@import url("bootstrap-multiselect.css");
+@import url("bootstrap-theme.css");
+@import url("bootstrap-grid.min.css");
+@import url("bootstrap-utilities.min.css");
 body {
   margin: 0;
   padding: 0;
@@ -149,6 +153,10 @@ h2.title:before {
   left: 0;
   top: 0;
 }
+.tableWrap table thead.table-dark {
+  background-color: #333;
+  color: #fff !important;
+}
 .tableWrap table thead th {
   font-size: 12px;
 }
@@ -156,14 +164,16 @@ h2.title:before {
   text-align: center;
 }
 .tableWrap table tbody th {
-  padding: 0;
+  padding: 5px 0;
+  vertical-align: middle;
 }
 .tableWrap table tbody th:first-of-type {
   text-align: center;
 }
 .tableWrap table tbody td {
   font-size: 10px;
-  padding: 0;
+  padding: 5px 0;
+  vertical-align: middle;
 }
 .tableWrap table .form-check {
   margin: 0;
@@ -188,6 +198,8 @@ h2.title:before {
 }
 .tableWrap table.table-data th {
   vertical-align: middle;
+  padding: 5px 0;
+  font-size: 14px;
 }
 .tableWrap table.table-data td {
   font-size: 14px;
@@ -237,6 +249,7 @@ h2.title:before {
 .searchContainer {
   padding: 10px 16px;
   border-bottom: 2px solid #333;
+  /*btn*/
 }
 .searchContainer .row > * {
   padding-left: calc(var(--bs-gutter-x) * 0.2);
@@ -253,6 +266,7 @@ h2.title:before {
   word-spacing: -1px;
   padding: 0 !important;
   line-height: 2.5;
+  margin-bottom: 0;
 }
 .searchContainer .btn {
   height: 30px;
@@ -272,6 +286,14 @@ h2.title:before {
   font-size: 12px;
   min-width: 30%;
 }
+.searchContainer .btnWrap .btn.bg-dark {
+  color: #fff;
+}
+.searchContainer .btn.bg-light {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #ccc;
+  font-size: 11px !important;
+}
 
 .inputListContainer {
   padding: 0 10px;
@@ -282,11 +304,32 @@ h2.title:before {
   font-weight: bold;
 }
 
-/*btn*/
-.btn.bg-light {
-  background-color: #f7f7f7 !important;
-  border: 1px solid #ccc;
-  font-size: 11px !important;
+.modal-wrap {
+  background-color: rgba(0, 0, 0, 0.3);
 }
-
-/*# sourceMappingURL=style.css.map */
+.modal-wrap .modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+}
+.modal-wrap.modal-dialog-centered {
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100% - var(--bs-modal-margin) * 2);
+}
+.modal-wrap .modal-content {
+  width: 80%;
+  min-height: calc(100% - var(--bs-modal-margin) * 2);
+}
+.modal-wrap .modal-content .modal-header {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-wrap .modal-content .modal-header .modal-title {
+  font-weight: bold;
+  font-size: 16px;
+}
