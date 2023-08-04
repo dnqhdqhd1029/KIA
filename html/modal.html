@@ -4,311 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>수출물류 종합 현황(R/TIME)</title>
-
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>LOCATION 현황 조회</title>
+    <link rel="stylesheet" href="../css/style.css"/>
 </head>
 
 <body>
-    <div class="wrap">
-        <header class="header">
-            <h1>수출물류 종합 현황(R/TIME)</h1>
-            <button class="btn bg-dark"><i class="bi bi-x-lg"></i></button>
-        </header>
-        <div class="container">
-            <div class="tableWrap">
-                <!-- <h3 class="mt-3"><b>오토랜드</b></h3> -->
-                <table class="table-data table">
-                    <tr>
-                        <th rowspan="6" class="bg-dark">오<br />토<br />랜<br />드</th>
-                        <th></th>
-                        <th scope="col" class="text-center">CAPA</th>
-                        <th scope="col" class="text-center">MP-IN</th>
-                        <th scope="col" class="text-center">MP-OUT</th>
-                        <th scope="col" class="text-center">재고</th>
-                        <th scope="col" class="text-center">CAPA대비</th>
-                    </tr>
+<div class="wrap">
+    <header class="header">
+        <h1>LOCATION 현황 조회</h1>
+        <button class="btn btn-dark"><i class="bi bi-x-lg"></i></button>
+    </header>
+    <div class="container">
+        <div class="searchContainer">
 
-                    <tr>
-                        <td class="text-center">
-                            <strong>광명</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>화성</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>석천</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>광주</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>위탁</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
+            <div class="mb-1 row">
+                <label class="col-2 col-form-label">■MP CD</label>
+                <div class="col-4 d-flex align-items-center">
+                    <input type="text" class="form-control bg-warning bg-opacity-10" placeholder="2M01">
+                    <button class="btn bg-light ms-1"><i class="bi bi-back"></i></button>
+                </div>
+                <label class="col-2 col-form-label">■수출국</label>
+                <div class="col-4 d-flex align-items-center">
+                    <input type="text" class="form-control me-1 bg-warning bg-opacity-10" placeholder="B28">
+                    <input type="text" class="form-control bg-warning bg-opacity-10" placeholder="">
+                </div>
 
-                </table>
+            </div>
 
-                <!-- <h3 class="mt-3"><b>선적항</b></h3> -->
-                <table class="table-data table">
+            <div class="mb-1 row">
+                <label class="col-2 col-form-label">■차종 CD</label>
+                <div class="col-8 d-flex align-items-center">
+                    <!--                        <select class="form-select bg-warning bg-opacity-10" aria-label="Default select example">-->
+                    <!--                            <option selected>차종선택</option>-->
+                    <!--                            <option value="1">HS ｜ CARNIVAL</option>-->
+                    <!--                            <option value="2">Two</option>-->
+                    <!--                            <option value="3">Three</option>-->
+                    <!--                        </select>-->
+                    <input type="text" class="form-control  bg-warning bg-opacity-10" placeholder="HS ｜ CARNIVAL">
 
-                    <tr>
-                        <th rowspan="5" class="bg-dark">선<br />적<br />항</th>
-                        <th></th>
-                        <th scope="col" class="text-center">CAPA</th>
-                        <th scope="col" class="text-center">MP-IN</th>
-                        <th scope="col" class="text-center">MP-OUT</th>
-                        <th scope="col" class="text-center">재고</th>
-                        <th scope="col" class="text-center">CAPA대비</th>
-                    </tr>
+                    <button class="btn bg-light ms-1"><i class="bi bi-back"></i></button>
 
-                    <tr>
-                        <td class="text-center">
-                            <strong>평택</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>포승</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>목포</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>목야</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
+                </div>
+
+            </div>
+            <div class="mb-1 row">
+                <label class="col-2 col-form-label">□선박CD</label>
+                <div class="col-4 d-flex align-items-center">
+                    <input type="text" class="form-control" placeholder="">
+                    <button class="btn bg-light ms-1"><i class="bi bi-back"></i></button>
+                </div>
+                <label class="col-2 col-form-label">□L/C CD</label>
+                <div class="col-4 d-flex align-items-center">
+                    <input type="text" class="form-control me-1 " placeholder="">
+                    <input type="text" class="form-control " placeholder="">
+                </div>
+
+            </div>
 
 
-                </table>
+            <div class="mb-1 row">
+                <label class="col-2 col-form-label">□예정일</label>
+                <div class="col-6 d-flex align-items-center">
+                    <input type="text" class="form-control" placeholder="">
+                    <button class="btn bg-light ms-1"><i class="bi bi-back"></i></button>
+                </div>
 
-                <!-- <h3 class="mt-3"><b>방청</b></h3> -->
-                <table class="table-data table">
+            </div>
 
-                    <tr>
-                        <th rowspan="3" class="bg-dark">방<br />청</th>
-                        <th></th>
-                        <th scope="col" class="text-center">CAPA</th>
-                        <th scope="col" class="text-center">MP-IN</th>
-                        <th scope="col" class="text-center">MP-OUT</th>
-                        <th scope="col" class="text-center">재고</th>
-                        <th scope="col" class="text-center">CAPA대비</th>
-                    </tr>
-
-                    <tr>
-                        <td class="text-center">
-                            <strong>포승</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <strong>목포</strong>
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            1350
-                        </td>
-                        <td class="text-center">
-                            900
-                        </td>
-                        <td class="text-center">
-                            250
-                        </td>
-                    </tr>
+            <div class="btnWrap">
+                <button type="button" class="btn  btn-dark ms-1">조회</button>
+            </div>
 
 
-                </table>
+        </div>
+
+        <div class="inputContainer ">
+
+            <div class="col-6 me-2 d-flex align-items-center">
+                <i class="bi bi-upc-scan me-2"></i>
+                <input type="text" class="form-control me-1 bg-primary bg-opacity-10" placeholder="HSP 306648">
+            </div>
+            <div class="col-4">
+                <small>HSP 306648</small>
             </div>
 
         </div>
 
-    </div>
+        <div class="tableWrap ">
+            <table class="table">
+                <colgroup>
+                    <col style="width: 10%;"/>
+                    <col/>
+                    <col style="width: 20%;"/>
+                    <col style="width: 20%;"/>
+                </colgroup>
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">N</th>
+                    <th scope="col">L/C-CD</th>
+                    <th scope="col">대수</th>
+                    <th scope="col">방청완료</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <th>Z0000</th>
+                    <td>205</td>
+                    <td>150</td>
 
-    <div class="modal-wrap modal " tabindex="-1" style="display: block;">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="width: 80%;">
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <th>Z0000</th>
+                    <td>205</td>
+                    <td>150</td>
+
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <footer>
+        <div class="info">
+            총 2건 조회 되었습니다
+        </div>
+    </footer>
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                            class="bi bi-x-lg"></i></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>Modal body text goes here.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn bg-secondary text-white" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn bg-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
+
+</div>
 </body>
 
 </html>
