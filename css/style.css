@@ -271,6 +271,10 @@ h2.title:before {
 .searchContainer .btn {
   height: 30px;
 }
+.searchContainer .btn.bg-dark {
+  font-size: 12px;
+  color: #fff !important;
+}
 .searchContainer .form-select {
   height: 30px;
   line-height: 15px;
